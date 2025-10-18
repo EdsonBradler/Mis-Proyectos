@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <style id="edson-tweak">
+    :root{--bg:#0b0f17;--text:#e5e7eb}
+    html,body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+    body{margin:16px}
+    img,video,canvas{max-width:100%;height:auto}
+    *{box-sizing:border-box}
+  </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edson — Document</title>
+    <script>
+        function calcular(){
+            let a = document.querySelector("#vara").value
+            let b = document.querySelector("#varb").value
+            c = parseFloat(a)+parseFloat(b)
+            document.querySelector("#varc").value = c
+        }
+    </script>
+</head>
+<body>
+    Ingrese A:
+    <input type="text" id="vara"><br>
+    Ingrese B: 
+    <input type="text" id="varb"><br>
+    <button onclick="calcular()">Calcular la suma de A y B</button><br>
+    Resultado: 
+    <input type="text" id="varc"><br>
+</body>
+</html>
